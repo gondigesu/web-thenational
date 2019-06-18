@@ -11,15 +11,8 @@
 
 header{
     background-image:url(../imagenes/header.jpeg);
-    height:25vw;
+    height:100vh;
     background-size:cover;
-    margin:0;
-    padding:0;
-}
-
-section,
-.spotify{
-    margin:0px 0px 80px 0px;
 }
 
 nav {
@@ -31,9 +24,9 @@ nav {
 }
 
 h1{
-    font-family:Limelight, cursive;
+    font-family:'Staatliches', cursive;
     letter-spacing:3px;
-    font-size:4em;
+    font-size:5em;
     padding:20px;
     color:transparent;
     -webkit-text-stroke:2px #404E7C;
@@ -63,13 +56,27 @@ section form {
 
 .listamiembros{
     list-style:none;
+    display:flex;
+    flex-flow: nowrap row;
+    justify-content:center;
+    align-content:space-evenly;
 }
 
-.listamiembros li{
-    float:left;
-    width: 18%;
-    margin-right: 5px;
-    padding:20px;
+.listamiembros li article{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.fotomiembrosmatt,
+.fotomiembrosaaron,
+.fotomiembrosbryce,
+.fotomiembrosscott,
+.fotomiembrosbryan{
+    border-radius:200px;
+    width: 160px;
+    filter:grayscale(100%);
 }
 
 .fotomiembrosmatt:hover,
@@ -80,33 +87,6 @@ section form {
     transform:scale(1.2);
 }
 
-.aaron,
-.matt,
-.scott,
-.bryce,
-.bryan{
-    display:block;
-    margin:10px;
-    padding:2px;
-    position:relative;
-    right:40px;
-    opacity:1;
-}
-
-.biomatt,
-.bioaaron,
-.biobryce,
-.biobryan,
-.bioscott{
-    font-family: open sans; sans-serif;
-    padding:2px;
-    margin:auto;
-    opacity:1;
-}
-
-#miembros{
-    overflow:auto;
-}
 
 h2{
     font-family:Radley, serif;
@@ -114,16 +94,16 @@ h2{
     background-color:#EDF3FA;
     color: #404E7C;
     padding:7.5px;
-    margin: 0px 0px 60px 0px;
+    margin: 0px;
 }
 
 .historia{
-    margin:0px 0px 80px 0px;
+    margin:0px;
 }
 
 h3{
     background-color: #D4E7F9;
-    margin:50px 0px 15px 0px;
+    margin:0px;
     padding: 5px;
 }
 
@@ -137,7 +117,7 @@ footer{
     padding:10px 10px 25px 10px;
     overflow:auto;
     clear:both;
-    margin:70px 0px 0px 0px;
+    margin:0px;
 }
 
 .redes{
@@ -157,16 +137,6 @@ footer{
     transform:scale(1.5);
 }
 
-.fotomiembrosmatt,
-.fotomiembrosaaron,
-.fotomiembrosbryce,
-.fotomiembrosscott,
-.fotomiembrosbryan{
-    border-radius:200px;
-    width: 160px;
-    filter:grayscale(100%);
-}
-
 footer ul li{
     float:right;
     padding:3px;
@@ -178,13 +148,15 @@ h4{
     float:right;
 }
 
-#audiosvideos .listavideos li{
-    margin:20px;
+#audiosvideos .listavideos li,
+.spotify{
+    margin:auto;
     text-align:center;
 }
 
 .discos{
     margin:auto;
+    text-align:center;
 }
 
 .discos li{
@@ -195,14 +167,4 @@ h4{
 
 .discos li:hover{
     transform:scale(1.2);
-}
-
-.discografia,
-.fotomiembrosmatt,
-.fotomiembrosaaron,
-.fotomiembrosbryce,
-.fotomiembrosscott,
-.fotomiembrosbryan,
-.spotify{
-    text-align:center;
 }
