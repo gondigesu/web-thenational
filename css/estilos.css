@@ -32,7 +32,6 @@ h1{
     -webkit-text-stroke:2px #404E7C;
 }
 
-section p,
 section ul,
 section form {
     font-family: open sans; sans-serif;
@@ -54,12 +53,34 @@ section form {
     color:#404E7C;
 }
 
+section{
+    background:#404E7C;
+    padding:0px 0px 30px 0px;
+}
+
+.contenedor{
+    background:white;
+    width:80%;
+    margin:auto;
+    border-radius:4px;
+    padding:20px 30px;
+    box-shadow: 0px 0px 10px solid black;
+}
+
+
+#historia p{
+    margin: 30px 0px 0px 0px;
+    padding:30px;
+    font-family: open sans; sans-serif;
+    line-height: 120%;
+}
+
 .listamiembros{
     list-style:none;
     display:flex;
     flex-flow: nowrap row;
     justify-content:center;
-    align-content:space-evenly;
+    align-content: stretch;
 }
 
 .listamiembros li article{
@@ -67,6 +88,16 @@ section form {
     flex-direction:column;
     justify-content:center;
     align-items:center;
+}
+
+.listamiembros li article h4{
+    margin:15px;
+}
+
+.listamiembros li article p{
+    margin:15px;
+    line-height: 150%;
+    font-family: open sans; sans-serif;
 }
 
 .fotomiembrosmatt,
@@ -77,6 +108,7 @@ section form {
     border-radius:200px;
     width: 160px;
     filter:grayscale(100%);
+    margin:15px;
 }
 
 .fotomiembrosmatt:hover,
@@ -91,19 +123,15 @@ section form {
 h2{
     font-family:Radley, serif;
     font-size:2em;
-    background-color:#EDF3FA;
-    color: #404E7C;
+    background-color:#222222;
+    color:white;
     padding:7.5px;
-    margin: 0px;
-}
-
-.historia{
-    margin:0px;
+    margin:0px 0px 40px 0px;
 }
 
 h3{
-    background-color: #D4E7F9;
-    margin:0px;
+    background-color:white;
+    margin:30px 0px 30px 0px;
     padding: 5px;
 }
 
@@ -112,12 +140,10 @@ h3{
 }
 
 footer{
-    background-color:#D4E7F9;
-    color: #222222;
-    padding:10px 10px 25px 10px;
+    background-color:#222222;
+    padding:20px;
     overflow:auto;
     clear:both;
-    margin:0px;
 }
 
 .redes{
@@ -127,7 +153,7 @@ footer{
 .fa-camera,
 .fa-twitter-square,
 .fa-facebook{
-    color: #222222;
+    color:white;
     font-size:1.80em;
 }
 
@@ -135,23 +161,13 @@ footer{
 .fa-twitter-square:hover,
 .fa-facebook:hover{
     transform:scale(1.5);
+    color:#404E7C;
 }
 
 footer ul li{
     float:right;
     padding:3px;
     margin-right:20px;
-}
-
-h4{
-    font-family:Radley, serif;
-    float:right;
-}
-
-#audiosvideos .listavideos li,
-.spotify{
-    margin:auto;
-    text-align:center;
 }
 
 .discos{
@@ -167,4 +183,68 @@ h4{
 
 .discos li:hover{
     transform:scale(1.2);
+}
+
+.datosdiscos1{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin:auto;
+}
+
+.datosdiscos2{
+    display:flex;
+    flex-flow:row-reverse nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    width:100%;
+    margin:auto;
+}
+
+.datosdiscos1 ul,
+.datosdiscos2 ul{
+    width: 40%;
+    padding:20px 60px;
+}
+
+.datosdiscos1 img,
+.datosdiscos2 img{
+    border-radius:70%;
+}
+
+.datosdiscos2 ul,
+.datosdiscos2 img{
+    padding:20px 60px;
+    margin-right:70px;
+}
+
+.datosdiscos1 img{
+    margin-left:30px;
+    padding: 20px 60px;
+    position:relative;
+    right:80px;
+}
+
+.spotify{
+    text-align:center;
+    padding:30px 40px;
+}
+
+.videos{
+    margin-top:30px;
+}
+
+.listavideos{
+    padding:20px 30px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.listavideo li{
+    width:30%;
+    padding: 20px;
 }
