@@ -5,8 +5,12 @@
 	box-sizing: border-box;
 }
 
+
+
 .menu li a{
     color:#EDF3FA;
+    font-family:Radley, serif;
+    
 }
 
 header{
@@ -42,11 +46,10 @@ section form {
 
 .menu li{
     list-style:none;
-    font-size: 1.50em;
     display:inline-block;
-    margin-right:50px;
     padding:7.5px;
-    font-family:Radley, serif;
+    margin-right:50px;
+    font-size: 1.50em;
 }
 
 .menu li a:hover{
@@ -247,4 +250,66 @@ footer ul li{
 .listavideo li{
     width:30%;
     padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        width:100%;
+    }
+
+    .menu{
+        width:100%;
+        margin:auto;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .menu li{
+        margin:auto;
+        padding:5px;
+    }
+
+    header{
+        background:url(../imagenes/headermobile.jpg);
+        background-size:cover;
+    }
+
+    .listamiembros{
+        flex-flow:nowrap column;
+    }
+
+    .datosdiscos1,
+    .datosdiscos2{
+        flex-flow:column nowrap;
+    }
+
+    .datosdiscos1 img,
+    .datosdiscos2 img{
+        display:none;
+    }
+
+    .datosdiscos1 ul,
+    .datosdiscos2 ul{
+        width:100%;
+        padding:20px;
+    }
+
+    .listavideos{
+        padding:10px 15px;
+        flex-flow:column wrap;
+        width:100%;
+    }
+
+    textarea{
+        width: 100%;
+        margin:auto;
+    }
+
+    iframe{
+        width:100%;
+    }
+
+
 }
